@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body bgcolor="lightgrey">
+<style>
+   
+</style>
+
+<div class="w3-container">
+<center><h1><b>Portfolio</b></h1></center><br>
+
+
+<h1>C</h1>
+<div class="w3-light-grey">
+<div id="C" class="w3-container w3-blue" style="height:24px;width:0%"></div>
+</div>
+
+<script>
+    function C() {
+      var elem = document.getElementById("C");   
+      var width = 0;
+      var id = setInterval(frame, 0);
+      function frame() {
+        if (width >= 70) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          document.getElementById("C").innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    C();
+</script>
+
+
+
+<h1>css</h1>
+<div class="w3-light-grey">
+<div id="css" class="w3-container w3-yellow" style="height:24px;width:0%"></div>
+</div>
+
+<script>
+    function css() {
+      var elem = document.getElementById("css");   
+      var width = 0;
+      var id = setInterval(frame, 0);
+      function frame() {
+        if (width >= 85) {
+          clearInterval(id);
+        } else {
+          width++; 
+          elem.style.width = width + '%'; 
+          document.getElementById("css").innerHTML = width * 1  + '%';
+        }
+      }
+    }
+    css();
+</script>
+
+
+
+<h1>html</h1>
+<div class="w3-light-grey">
+  <div id="html" class="w3-container w3-orange" style="height:24px;width:0%"></div>
+  </div>
+
+<script>
+function html() {
+  var elem = document.getElementById("html");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 90) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("html").innerHTML = width * 1  + '%';
+    }
+  }
+}
+html();
+</script>
+
+
+<h1>java</h1>
+<div class="w3-light-grey">
+  <div id="java" class="w3-container w3-red" style="height:24px;width:0%"></div>
+  </div>
+
+<script>
+function java() {
+  var elem = document.getElementById("java");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 60) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("java").innerHTML = width * 1  + '%';
+    }
+  }
+}
+java();
+</script>
+
+
+<h1>php</h1>
+<div class="w3-light-grey">
+  <div id="php" class="w3-container w3-green" style="height:24px;width:0%"></div>
+  </div>
+
+<script>
+function php() {
+  var elem = document.getElementById("php");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 90) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("php").innerHTML = width * 1  + '%';
+    }
+  }
+}
+php();
+</script>
+
+<h1>python</h1>
+<div class="w3-light-grey">
+  <div id="python" class="w3-container w3-purple" style="height:24px;width:0%"></div>
+  </div>
+
+<script>
+function python() {
+  var elem = document.getElementById("python");   
+  var width = 0;
+  var id = setInterval(frame, 0);
+  function frame() {
+    if (width >= 60) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      document.getElementById("python").innerHTML = width * 1  + '%';
+    }
+  }
+}
+python();
+</script><br><br>
+
+
+
+
+
+
+
+
+<div class="w3-container">
+<center>
+  <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Resume</button>
+
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <img src="resume-ii.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+</center><br><br><br><br><br>
+            
+</body>
+</html>

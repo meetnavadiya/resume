@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<title>portfolio</title>
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<body bgcolor="lightgrey">
+    <style>
+        .w3-cell-row{
+            width: 50%;
+           margin-left: 700px;
+        }
+        .w3-barw3cardw3theme{
+        background-color: rgb(255, 249, 249);
+        }
+        #font{
+            position: absolute;
+            padding-top: 270px;
+            color: rgb(0, 0, 0);
+            font-size: large;
+            padding-left:250px;
+            
+        }
+        
+        #font1{
+          position: absolute;
+          padding-top:380px;
+          font-size: 20%;
+          padding-left: 250px;
+          color: rgb(7, 7, 7);
+      }
+      #font2{
+        position: absolute;
+        padding-top:430px;
+        font-size: 20%;
+        padding-left: 250px;
+        color: rgb(7, 7, 7);
+    }
+    
+      
+    .social_media i:hover{
+        opacity: 3;
+        transform: scale(2);
+    }
+    .w3-cell-row{
+      padding-top: 30px;
+      margin-left: 800px;
+      
+    }
+    .w3{
+      text-decoration: none;
+      padding-left: 20px;
+     
+      
+
+    }
+    .w3:hover{
+      box-shadow:0 0 6px black;
+      }
+
+   
+    </style>
+    
+<nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+<div class="w3-container w3-theme-d2">
+  <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+  <br>
+  <div class="w3-padding w3-center">
+    <img class="w3-circle" src="1.jpg" alt="avatar" style="width:100%">
+  </div>
+</div>
+<a class="w3-bar-item w3-button" href="index.html">Home </a>
+<a class="w3-bar-item w3-button" href="portfolio.html">portfolio</a>
+<a class="w3-bar-item w3-button" href="about.html">About Me</a>
+<a class="w3-bar-item w3-button" href="contact.html">Contact</a><br><br> 
+
+<div class="social_media">
+  <ul>
+      <a href="https://www.instagram.com/meetttt.____/"><i class="fa-brands fa-instagram"></i></a>&nbsp;
+      <a href="https://www.linkedin.com/in/meet-navadiya-714791252/"><i class="fa-brands fa-linkedin"></i></a>&nbsp;
+      <a href="https://wa.me/7016333497"><i class="fa-brands fa-whatsapp"></i></a>&nbsp;
+      <a href="https://twitter.com/meetnavadi2112"><i class="fa-brands fa-twitter"></i></a><br><br><br><br><br><br><br><br>
+
+  </ul>
+
+  Did you like my portfolio?
+  <p class="w3-left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="w3-button w3-white w3-border" style="color:rgb(0, 0, 0)" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i>Like</b></button></p>
+
+</div>
+</nav>
+
+<header class="w3-bar w3-card w3-theme">
+  <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+  <h1 class="w3-bar-item">Meet</h1>
+
+  <div  class="container">
+  
+
+</header>
+
+
+<span id="font">
+  <b style="font-size: xx-large;"> <br>Hy I'm Meet,</b>
+</span>
+<span id="font1">
+<h3><b style="font-size: xx-large;">Software Devloper.</b></h3>
+</span>
+<span id="font2">
+  <h6><p> I am a software developer with experience in a 
+    veriety of programming<br> languages and a track 
+    recored of delivering high-quality code</p>
+ </h6>
+  </span>
+
+<span id="button">
+</span>
+
+<div class="w3-container">
+
+<div class="w3-cell-row">
+  <div class="w3-cell" style="width:100%">
+    <img class="w3-circle" src="img4.jpg" style="width:80%">
+  </div>
+  </div>
+  
+
+ 
+
+<script>
+closeSidebar();
+function openSidebar() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function closeSidebar() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+
+ 
+}
+
+var window;
+function scroll(){
+window.scrollBy(0,20);
+}
+document.getElementById("btn").addEventListener("click",scroll);
+
+
+</script>
+</body>
